@@ -80,10 +80,8 @@ Switched to on-demand updates triggered when opening the map
 
 ---
 
-#Media
-
-
-
+## Media
+- WASD-based map movement
 
 
 
