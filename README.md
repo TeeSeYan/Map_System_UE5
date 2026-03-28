@@ -75,7 +75,6 @@ The system was rebuilt to improve stability and make it easier to maintain and e
 
 ## Media
 - **WASD-based Map Navigation**
-Singleplayer:
 ![Map Movement](image/MapSystem_Features_01.gif)
 
 --- 
