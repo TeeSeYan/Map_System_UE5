@@ -74,29 +74,29 @@ The system was rebuilt to improve stability and make it easier to maintain and e
 ---
 
 ## Media
-- WASD-based Map Navigation
+- **WASD-based Map Navigation**
 Singleplayer:
 ![Map Movement](image/MapSystem_Features_01.gif)
 
 --- 
 
-- Zoom In/Out
+- **Zoom In/Out**
 ![Zoom](image/MapSystem_Features_02.gif)
 
 ---
 
-- Floor switching (Next / Previous system)
+- **Floor switching (Next / Previous system)**
 
-- Singleplayer:
+- **Singleplayer:**
 ![Floor Switch](image/MapSystem_Features_03.gif)
 
-- Multiplayer:
+- **Multiplayer:**
 ![Floor Switch](image/MapSystem_Features_04.gif)
 
 ---
 
-- Update Map
-Multiplayer: 
+- **Update Map**
+**Multiplayer:**
 ![Alt text](image/MapSystem_Features_05.gif)
 
 
