@@ -47,12 +47,12 @@ The system was rebuilt to improve stability and make it easier to maintain and e
 ## Challenges & Solutions
 
 - **Problem:** Map alignment broke when SceneCapture and player were offset from origin
-**Solution:** Reworked UV mapping logic using relative positioning and normalization instead of absolute coordinates
+- **Solution:** Reworked UV mapping logic using relative positioning and normalization instead of absolute coordinates
 
 ---
 
 - **Problem:** Opening the map was slow due to repeated casting of objects in nested loops.
-**Solution:** Stored object references in variables and updated the map only when it was opened to make it faster and smoother
+- **Solution:** Stored object references in variables and updated the map only when it was opened to make it faster and smoother
 
 ---
 
