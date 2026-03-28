@@ -96,7 +96,7 @@ The system was rebuilt to improve stability and make it easier to maintain and e
 
 - **Update Map**
 
--**Multiplayer:**
+- **Multiplayer:**
 ![Alt text](image/MapSystem_Features_05.gif)
 
 
