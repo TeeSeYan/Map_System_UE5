@@ -1,11 +1,11 @@
-# Parasomnia - Map System (Unreal Engine 5)
+# Map System (Unreal Engine 5)
 
 ---
 
 ## Overview
-Developed a fully functional in game map system during an internship project for Parasomnia.
+Developed an in game-map system during my internship.
 
-The system was rebuilt from scratch due to incomplete documentation and unstable prior implementation. The goal was to design a scalable and maintainable solution while supporting UI integration, player tracking and multi-floor navigation.
+The system was rebuilt to improve stability and make it easier to maintain and expand. The goal was to design a scalable and maintainable solution while supporting UI integration, player tracking and multi-floor navigation.
 
 --- 
 
@@ -23,10 +23,10 @@ The system was rebuilt from scratch due to incomplete documentation and unstable
 
 ### Player Tracking
 - Developed player icon system with support for different characters and game modes
-- Optimised performance by updating map data only when the map is opened
+- Optimised performance by updating map data only (When the map is opened)
 
 ### Navigation & Controls
-- WASD-based map movement (inspired by Resident Evil 2)
+- WASD-based map movement
 - Zoom in/out functionality
 - Floor switching (Next / Previous system)
 
@@ -34,7 +34,7 @@ The system was rebuilt from scratch due to incomplete documentation and unstable
 - Implemented trigger-based discovery system
 - Reveals rooms dynamically as the player explores
 
-### Texture & Pipeline Workflow
+### Map Texture Pipeline
 - Captured high-resolution map images using Render Targets
 - Exported textures for artist overdraw
 - Resolved resolution mismatches using external tools (Photoshop)
@@ -46,19 +46,13 @@ The system was rebuilt from scratch due to incomplete documentation and unstable
 
 ## Challenges & Solutions
 
-- Problem:
-Map alignment broke when SceneCapture and player were offset from origin
-
-- Solution:
-Reworked UV mapping logic using relative positioning and normalization instead of absolute coordinates
+- **Problem:** Map alignment broke when SceneCapture and player were offset from origin
+**Solution:** Reworked UV mapping logic using relative positioning and normalization instead of absolute coordinates
 
 ---
 
-- Problem:
-Real-time updates caused unnecessary performance overhead
-
-- Solution:
-Switched to on-demand updates triggered when opening the map
+- **Problem:** Opening the map was slow due to repeated casting of objects in nested loops.
+**Solution:** Stored object references in variables and updated the map only when it was opened to make it faster and smoother
 
 ---
 
@@ -72,8 +66,7 @@ Switched to on-demand updates triggered when opening the map
 ---
 
 ## Tools & Technologies
-- Unreal Engine 5
-- Blueprint System
+- Unreal Engine 5 (Blueprint)
 - SceneCapture2D & Render Targets
 - UMG (UI System)
 - Photoshop (Texture adjustments)
@@ -81,28 +74,28 @@ Switched to on-demand updates triggered when opening the map
 ---
 
 ## Media
-- WASD-based map movement
+- WASD-based Map Navigation
 Singleplayer:
-![Alt text](image/MapSystem_Features_01.gif)
+![Map Movement](image/MapSystem_Features_01.gif)
 
 --- 
 
-- Zoom In/Out Function
-![Alt text](image/MapSystem_Features_02.gif)
+- Zoom In/Out
+![Zoom](image/MapSystem_Features_02.gif)
 
 ---
 
 - Floor switching (Next / Previous system)
 
 - Singleplayer:
-![Alt text](image/MapSystem_Features_03.gif)
+![Floor Switch](image/MapSystem_Features_03.gif)
 
 - Multiplayer:
-![Alt text](image/MapSystem_Features_04.gif)
+![Floor Switch](image/MapSystem_Features_04.gif)
 
 ---
 
-- Update Map System
+- Update Map
 Multiplayer: 
 ![Alt text](image/MapSystem_Features_05.gif)
 
